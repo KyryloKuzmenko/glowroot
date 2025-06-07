@@ -1,18 +1,31 @@
 @import './header.scss';
-@import './vite-promo.scss';
+@import './about.scss';
+@import './visuals.scss';
+@import './gameplay.scss';
+@import './progress.scss';
+@import './support.scss';
+@import './mobile.scss';
+@import './rewards.scss';
+@import './community.scss';
+@import './testimonials.scss';
+@import './faq.scss';
+@import './info.scss';
+@import './contact.scss';
+@import './cookies-modal.scss';
+@import './footer.scss';
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+
+body {
+  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
 }
