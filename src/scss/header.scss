@@ -1,0 +1,83 @@
+.header-section {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  right: 0;
+}
+
+.header-content-wrap {
+  position: relative;
+  background: #130f3b;
+  height: 80px;
+  @include media(desktop) {
+    background: rgba(248, 1, 179, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+.header-desktop-list {
+  display: none;
+  @include media(desktop) {
+    display: flex;
+    gap: 16px;
+  }
+}
+
+.header-desktop-link {
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  white-space: nowrap;
+}
+
+.burger-menu,
+.burger-menu-close {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 375px;
+  height: 100%;
+  margin: 0 auto;
+  z-index: 1001;
+  background: #f801b3;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.backdrop.show {
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  justify-content: center;
+}
+
+.backdrop-list {
+  display: flex;
+  flex-direction: column;
+  width: 141px;
+  gap: 16px;
+  margin-top: 79px;
+  padding-top: 16px;
+}
+
+.backdrop-list-link {
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+}

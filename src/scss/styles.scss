@@ -1,4 +1,5 @@
 @import './header.scss';
+@import './hero.scss';
 @import './about.scss';
 @import './visuals.scss';
 @import './gameplay.scss';
@@ -18,6 +19,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
+  background: #1E1E1E;
 }
 
 h1,
@@ -28,4 +30,14 @@ h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
+}
+
+.main-content {
+  background: linear-gradient(180deg, #020704 0%, #2bc16b 100%);
+  max-width: 375px;
+  margin: 0 auto;
+  height: 12918px;
+  @include media(desktop) {
+    max-width: 1440px;
+  }
 }

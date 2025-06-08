@@ -1,0 +1,53 @@
+.gameplay-content-wrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 68px;
+  padding-bottom: 90px;
+}
+
+.gameplay-title {
+  font-size: 48px;
+  line-height: 1.04167;
+  color: #00fffb;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.gameplay-text-wrap {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.gameplay-text {
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+text-align: justify;
+color: #eaf9fd;
+}
+
+.gameplay-swiper {
+  margin-top: 46px;
+  width: 100%;
+  position: relative;
+  left: -9px;
+  width: calc(100% + 18px);
+  overflow: hidden;
+  @include media(desktop) {
+    margin-top: 68px;
+  }
+}
+
+.gameplay-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    gap: 25px;
+  }
+}
+
+
+.gameplay-swiper-wrapper .gameplay-swiper-slide {
+  width: 199px;
+
+}

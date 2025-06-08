@@ -1,0 +1,138 @@
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  @include media(desktop) {
+    position: relative;
+    z-index: 1;
+    max-height: 900px;
+  }
+}
+
+.hero-content-wrap {
+  background-image: url('../img/mobile/hero-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 127px;
+  @include media(desktop) {
+    background-image: none;
+    padding: 0;
+  }
+}
+
+.hero-desktop-wrap {
+  @include media(desktop) {
+    background-image: url('../img/desktop/hero-desktop.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+  }
+}
+
+.hero-top-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title {
+  font-size: 32px;
+  line-height: 1.1875;
+  color: #00fffb;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  @include media(desktop) {
+    font-size: 48px;
+    line-height: 1.04167;
+  }
+}
+
+.hero-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  text-align: justify;
+  color: #eaf9fd;
+  margin-top: 31px;
+  @include media(desktop) {
+    text-align: left;
+  }
+}
+
+.hero-mobile-img {
+  margin-top: 30px;
+  @include media(desktop) {
+    display: none;
+  }
+}
+
+.hero-desktop-img {
+  display: none;
+  @include media(desktop) {
+    display: block;
+  }
+}
+
+.hero-bottom-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  text-align: justify;
+  color: #eaf9fd;
+  margin-top: 30px;
+  @include media(desktop) {
+    text-align: left;
+  }
+}
+
+.bottom-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include media(desktop) {
+    width: 485px;
+  }
+}
+
+.hero-btn {
+  margin-top: 30px;
+  width: 355px;
+  height: 66px;
+  border-radius: 50px;
+  padding: 9px;
+  backdrop-filter: blur(52.5px);
+  box-shadow: 0 61px 176px 0 rgba(0, 48, 121, 0.21);
+  background: #2bc16b;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 1.33333;
+  text-transform: uppercase;
+  color: #fff;
+  @include media(desktop) {
+    width: 485px;
+    height: 66px;
+  }
+}
+
+.text-hero-wrap {
+  @include media(desktop) {
+    width: 490px;
+  }
+}
+
+.hero-desktop-wrap {
+  @include media(desktop) {
+    display: flex;
+    gap: 210px;
+    padding-left: 173px;
+    padding-right: 216px;
+    padding-top: 127px;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 57px;
+  }
+}
