@@ -1,0 +1,149 @@
+.progress-section {
+  position: relative;
+  z-index: 2;
+  overflow: visible;
+}
+
+.pink-cube-wrap {
+  position: absolute;
+  top: -150px;
+  right: 0;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  pointer-events: none;
+  @include media(desktop) {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    height: 100%;
+  }
+}
+
+.progress-cube-mobile-pink {
+  position: absolute;
+  top: -10px;
+  right: -145px;
+  z-index: 2;
+  @include media(desktop) {
+    top: 309px;
+    right: auto;
+  }
+}
+
+.white-cube-wrap {
+  position: absolute;
+  bottom: -110px;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  pointer-events: none;
+  @include media(desktop) {
+    bottom: 0;
+    top: auto;
+    left: auto;
+    right: 0;
+    height: 100%;
+    overflow: visible;
+  }
+}
+
+.progress-cube-mobile-white {
+  position: absolute;
+  left: -165px;
+  @include media(desktop) {
+    left: auto;
+    right: 136px;
+    top: 353px;
+  }
+}
+
+.dark-white-cube-wrap {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    overflow: visible;
+  }
+}
+
+.dark-white-cube-img {
+  position: absolute;
+  top: -198px;
+  right: 0;
+  bottom: 0;
+}
+
+.progress-content-wrap {
+  padding-top: 68px;
+  padding-bottom: 200px;
+  @include media(desktop) {
+    padding-bottom: 120px;
+  }
+}
+
+.progress-title {
+  font-size: 48px;
+  line-height: 1.04167;
+  color: #00fffb;
+  text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.progress-text-wrap {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 31px;
+  @include media(desktop) {
+    flex-direction: row;
+  }
+}
+
+.progress-text-wrap-1 {
+  border-radius: 50px;
+  width: 355px;
+  height: 204px;
+  padding-left: 7px;
+  padding-right: 7px;
+  background: rgba(41, 95, 131, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include media(desktop) {
+    width: 434px;
+    height: 204px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.progress-text-wrap-2 {
+  border-radius: 50px;
+  width: 355px;
+  height: 407px;
+  padding-left: 7px;
+  padding-right: 7px;
+  background: rgba(41, 95, 131, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include media(desktop) {
+    width: 434px;
+    height: 407px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.progress-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: justify;
+  color: #eaf9fd;
+}
