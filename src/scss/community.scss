@@ -1,0 +1,56 @@
+.community-content-wrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+  padding-bottom: 60px;
+  gap: 30px;
+  @include media(desktop) {
+    padding-top: 70px;
+    padding-bottom: 85px;
+  }
+}
+
+.community-title {
+  font-size: 44px;
+  line-height: 1.13636;
+  color: #00fffb;
+}
+
+.community-list-img {
+  width: 77px;
+  height: 77px;
+  @include media(desktop) {
+    width: 82px;
+    height: 82px;
+  }
+}
+
+.community-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: justify;
+  color: #eaf9fd;
+}
+
+.community-follow-us {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @include media(desktop) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+.community-list {
+  display: flex;
+  gap: 15px;
+}
+
+.community-follow-us-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.5;
+  color: #ff0;
+}

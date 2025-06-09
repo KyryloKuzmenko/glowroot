@@ -42,3 +42,18 @@ h6 {
     max-width: 1440px;
   }
 }
+
+
+.mobile-rewards-wrap {
+  background-image: url('../img/mobile/mobile-rewards-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  @include media(desktop) {
+    background-image: url('../img/desktop/mobile-rewards-desktop-bg.png');
+    display: flex;
+    gap: 116px;
+    justify-content: center;
+    padding-top: 122px;
+    padding-bottom: 122px;
+  }
+}

@@ -1,0 +1,26 @@
+.mobile-content-wrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+  padding-bottom: 63px;
+  @include media(desktop) {
+    padding: 0;
+    width: 490px;
+    height: 435px;
+  }
+}
+
+.mobile-title {
+  font-size: 48px;
+  line-height: 1.04167;
+  color: #00fffb;
+}
+
+.mobile-text {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  text-align: justify;
+  color: #eaf9fd;
+}
