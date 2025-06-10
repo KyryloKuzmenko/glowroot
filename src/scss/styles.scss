@@ -15,19 +15,15 @@
 @import './cookies-modal.scss';
 @import './footer.scss';
 
-
 body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  background: #1E1E1E;
+  background: #1e1e1e;
 }
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.6);
@@ -37,12 +33,11 @@ h6 {
   background: linear-gradient(180deg, #020704 0%, #2bc16b 100%);
   max-width: 375px;
   margin: 0 auto;
-  height: 12918px;
+  // height: 12918px;
   @include media(desktop) {
     max-width: 1440px;
   }
 }
-
 
 .mobile-rewards-wrap {
   background-image: url('../img/mobile/mobile-rewards-bg.png');

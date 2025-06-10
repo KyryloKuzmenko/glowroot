@@ -1,0 +1,47 @@
+.contact-content-wrap {
+  display: flex;
+  flex-direction: column;
+  padding-top: 68px;
+  padding-bottom: 72px;
+}
+
+.contact-title {
+  font-size: 48px;
+line-height: 1.04167;
+color: #00fffb;
+}
+
+.contact-main {
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 48, 121, 0.21);
+  border-radius: 20px;
+  padding: 39px 0;
+  padding-left: 10px;
+  padding-right: 30px;
+  gap: 20px;
+
+  width: 100%;
+  position: relative;
+  left: -9px;
+  width: calc(100% + 18px);
+  overflow: hidden;
+  margin-top: 31px;
+  @include media(desktop) {
+    padding: 60px 38px;
+    border-radius: 50px;
+  }
+}
+
+.contact-email-info {
+  font-weight: 900;
+font-size: 20px;
+line-height: 1.2;
+color: #eaf9fd;
+}
+
+
+.contact-text {
+  font-weight: 900;
+  color: #ff0;
+}
