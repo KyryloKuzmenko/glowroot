@@ -2,6 +2,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const openMenuBtn = document.querySelector('.burger-menu');
   const closeMenuBtn = document.querySelector('.burger-menu-close');
   const backdrop = document.querySelector('.backdrop');
+  const links = document.querySelectorAll('.backdrop-list-item');
+
+  links.forEach(link => {
+    link.addEventListener('click', () => {
+      if (link.closest('.backdrop')) {
+        toggleMenu(false);
+      }
+    });
+  });
 
   function toggleMenu(show) {
     openMenuBtn.style.display = show ? 'none' : 'block';
@@ -16,5 +25,5 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target === backdrop) toggleMenu(false);
   });
 
-  
+
 });

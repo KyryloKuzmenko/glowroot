@@ -1,12 +1,8 @@
 document.addEventListener('DOMContentLoaded', function () {
   const accept = document.querySelector('.cookies-accept');
   const decline = document.querySelector('.cookies-decline');
-  const closeBtn = document.querySelector('.close-cookies-modal-btn');
   const container = document.querySelector('.cookies-wrap');
 
-  closeBtn.addEventListener('click', () => {
-    container.style.display = 'none';
-  });
 
   let value = localStorage.getItem('cookies-privacy');
 
